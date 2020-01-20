@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent><!-- 子类里面声明才能明确的继承表现，无意外就是父类的默认版本否则自己定义 -->
+    <groupId>com.ykm.springcloud</groupId>
+    <artifactId>microservicecloud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>microservicecloud-API</artifactId><!-- 当前Module我自己叫什么名字 -->
+  <dependencies>
+  	<dependency><!-- 当前Module需要的jar包，按自己的需求添加，如果父类已经包含了，可以不用谢版本号 -->
+  		<groupId>org.projectlombok</groupId>
+  		<artifactId>lombok</artifactId>
+  	</dependency>
+  	<dependency>
+         <groupId>org.springframework.cloud</groupId>
+         <artifactId>spring-cloud-starter-feign</artifactId>
+    </dependency>
+  </dependencies>
+</project>
