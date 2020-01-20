@@ -1,1 +1,1 @@
-在集中配置那里需要的配置信息，在microservicecloud demo中可以找到
+在集中配置那里需要的配置信息，在microservicecloud-config demo中可以找到
